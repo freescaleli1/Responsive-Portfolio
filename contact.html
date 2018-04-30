@@ -1,0 +1,72 @@
+<!-- UCI CODING BOOTCAMP HW1 Professional Portfolio      -->
+<!-- Name: Li Tian; Date: 04/21/18                       -->
+<!--Contact Form-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Contact</title>
+<!-- Add a CSS Reference Here! -->
+<link rel="stylesheet" href="./assets/css/reset.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+<!-- We need to bring in the bootstrap CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<style>
+    input[type=text]{
+      width:100%;
+      border:2px solid #aaa;
+      border-radius:4px;
+      margin:8px 0;
+      outline:none;
+      padding:8px;
+      box-sizing:border-box;
+      transition:.3s;
+    }
+
+    input[type=text]:focus{
+        border-color:dodgerBlue;
+        box-shadow: 0 0 8px 0 dodgerblue;
+    }
+
+    textarea[type=Message]{
+      width:100%;
+      border:2px solid #aaa;
+      border-radius:4px;
+      margin:20px 0;
+      outline:none;
+      padding:8px;
+      box-sizing:border-box;
+      height:200px;
+      transition:.3s;
+    }
+</style>
+
+<body background="./assets/images/circles-light.png"> 
+    <!--nav bar creation-->      
+    <div class="nav navbar-default navbar-fixed-top"></div>
+    <div class="container">
+      <ul>
+        <li style="float: right;"><a href="./contact.html">Contact</a></li>
+        <li style="float: right;"><a href="./portfolio.html">Portfolio</a></li>
+        <li style="float: right;"><a href="./index.html">About</a></li>
+        <li style="float: left;"><a class="active" href="#about">Li Tian</a></li>
+      </ul>
+      <h3 class="green"> Contact </h3>          
+        <form class="message-form">
+           <p class="form-text">Name</p>
+           <input type="text" placeholder="Li Tian">                  
+           <p class="form-text">Email</p>
+           <input type="text" placeholder="freescale.li@gmail.com">
+           <p class="form-text">Message</p>
+           <textarea type="Message" placeholder="Write something.." ></textarea>
+           <input type="submit" value="Submit" id="submitBtn">
+           </form>
+    </div>
+  </div>
+  
+</body>
+</html>
